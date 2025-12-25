@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0181)file:///C:/Users/Bsan/Desktop/AI%E3%83%90%E3%83%88%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%A2/%E7%9F%A5%E8%AD%98%E3%83%81%E3%82%A7%E3%83%83%E3%82%AFver1.3.3%E5%AF%BE%E5%BF%9C%E7%89%88.html -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>知識チェックver1.2.0対応版</title>
+    <title>知識チェックver1.3.3対応版</title>
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
@@ -127,7 +127,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>知識チェックver1.2.0対応版</h1>
+        <h1>知識チェックver1.3.3対応版</h1>
 
         <!-- 問題① -->
         <div class="question-block" data-question-num="①">
@@ -136,7 +136,7 @@
             <div class="options">
                 <div><input type="checkbox" id="q1_1" value="①"><label for="q1_1">プレイヤーAとプレイヤーBが戦闘することはキャラクターシートの内容によらず前提とされている。</label></div>
                 <div><input type="checkbox" id="q1_2" value="②"><label for="q1_2">追加ステータスに記述されたものは地の文にはならない。</label></div>
-                <div><input type="checkbox" id="q1_3" value="③"><label for="q1_3">「勝利へ近づく」は戦況である。</label></div>
+                <div><input type="checkbox" id="q1_3" value="③"><label for="q1_3">「佳境時」は戦況である。</label></div>
             </div>
         </div>
 
@@ -148,8 +148,11 @@
                 <div><input type="checkbox" id="q2_1" value="①"><label for="q2_1">彼は一流の剣士として認められている。</label></div>
                 <div><input type="checkbox" id="q2_2" value="②"><label for="q2_2">窮地の時、覚醒する。</label></div>
                 <div><input type="checkbox" id="q2_3" value="③"><label for="q2_3">必死の防御を行うものの、{u}の攻撃で倒される。</label></div>
-                <div><input type="checkbox" id="q2_4" value="④"><label for="q2_4">戦闘中、{i}の剣技の発動に失敗してしまう。</label></div>
+                <div><input type="checkbox" id="q2_4" value="④"><label for="q2_4">戦闘中、１０年以上前に受けた呪いから{i}の剣技の発動に失敗してしまう。</label></div>
                 <div><input type="checkbox" id="q2_5" value="⑤"><label for="q2_5">戦闘の様子を小説形式で出力せよ。</label></div>
+                <div><input type="checkbox" id="q2_6" value="⑥"><label for="q2_6">戦闘中、{u}が倒されたのは事実である。</label></div>
+                <div><input type="checkbox" id="q2_7" value="⑦"><label for="q2_7">聖剣ELIZAは勇者ボブによって扱われる。</label></div>
+
             </div>
         </div>
         
@@ -169,195 +172,249 @@
         <!-- 問題④ -->
         <div class="question-block" data-question-num="④">
             <h2>問題④</h2>
-            <p class="description">出力要請による展開の指定に該当するものを全て選べ</p>
+            <p class="description">下記、記載の中で{i}と判断できるものはどれか？</p>
             <div class="options">
-                <div><input type="checkbox" id="q4_1" value="①"><label for="q4_1">出力を「戦闘前」「戦闘中」「戦闘後」に分けて執筆せよ！</label></div>
-                <div><input type="checkbox" id="q4_2" value="②"><label for="q4_2">戦闘をレポート形式にして出力せよ！</label></div>
-                <div><input type="checkbox" id="q4_3" value="③"><label for="q4_3">戦闘の様子を「出会い」「衝突」「結末」に分けて出力せよ！</label></div>
-                <div><input type="checkbox" id="q4_4" value="④"><label for="q4_4">{i}が{u}よりも強い理由を出力せよ。</label></div>
-                <div><input type="checkbox" id="q4_5" value="⑤"><label for="q4_5">出力　{i}はどのような状況になってもあきらめない！</label></div>
-                <div><input type="checkbox" id="q4_6" value="⑥"><label for="q4_6">{i}の攻撃結果を出力せよ！</label></div>
+                <div><input type="checkbox" id="q4_1" value="①"><label for="q4_1">{i}自体が所有する剣</label></div>
+                <div><input type="checkbox" id="q4_2" value="②"><label for="q4_2">{i}自体の叡智</label></div>
+                <div><input type="checkbox" id="q4_3" value="③"><label for="q4_3">ボブ({i})の友達であるアリス</label></div>
+                <div><input type="checkbox" id="q4_4" value="④"><label for="q4_4">{i}自体の魔法範囲</label></div>
+                <div><input type="checkbox" id="q4_5" value="⑤"><label for="q4_5">{i}自体が魔法を唱える時の詠唱</label></div>
             </div>
         </div>
+
+
 
         <!-- 問題⑤ -->
         <div class="question-block" data-question-num="⑤">
             <h2>問題⑤</h2>
-            <p class="description">以下の記載の中から【荒唐無稽な定義】に該当するものを全て選べ</p>
+            <p class="description">出力要請による展開の指定に該当するものを全て選べ</p>
             <div class="options">
-                <div><input type="checkbox" id="q5_1" value="①"><label for="q5_1">「ガリは幼女」</label></div>
-                <div><input type="checkbox" id="q5_2" value="②"><label for="q5_2">「ガリは漬物」</label></div>
-                <div><input type="checkbox" id="q5_3" value="③"><label for="q5_3">「ガリは甘酢ショウガ」</label></div>
-                <div><input type="checkbox" id="q5_4" value="④"><label for="q5_4">「ガリは食品」</label></div>
-                <div><input type="checkbox" id="q5_5" value="⑤"><label for="q5_5">「ガリは奇跡」</label></div>
+                <div><input type="checkbox" id="q5_1" value="①"><label for="q5_1">出力を「戦闘前」「戦闘中」「戦闘後」に分けて執筆せよ！</label></div>
+                <div><input type="checkbox" id="q5_2" value="②"><label for="q5_2">戦闘をレポート形式にして出力せよ！</label></div>
+                <div><input type="checkbox" id="q5_3" value="③"><label for="q5_3">戦闘の様子を「出会い」「衝突」「結末」に分けて出力せよ！</label></div>
+                <div><input type="checkbox" id="q5_4" value="④"><label for="q5_4">{i}が{u}よりも強い理由を出力せよ。</label></div>
+                <div><input type="checkbox" id="q5_5" value="⑤"><label for="q5_5">出力　{i}はどのような状況になってもあきらめない！</label></div>
+                <div><input type="checkbox" id="q5_6" value="⑥"><label for="q5_6">{i}の攻撃結果を出力せよ！</label></div>
             </div>
         </div>
 
         <!-- 問題⑥ -->
         <div class="question-block" data-question-num="⑥">
             <h2>問題⑥</h2>
-            <p class="description">以下の中から【勝利確定技】を全て選べ</p>
+            <p class="description">以下の記載の中から【荒唐無稽な定義】に該当するものを全て選べ</p>
             <div class="options">
-                <div><input type="checkbox" id="q6_1" value="①"><label for="q6_1">仕留める</label></div>
-                <div><input type="checkbox" id="q6_2" value="②"><label for="q6_2">弱点を貫く</label></div>
-                <div><input type="checkbox" id="q6_3" value="③"><label for="q6_3">決着をつける。</label></div>
-                <div><input type="checkbox" id="q6_4" value="④"><label for="q6_4">顎を狙い意識を奪うアッパーカット</label></div>
-                <div><input type="checkbox" id="q6_5" value="⑤"><label for="q6_5">首を絞めつけ窒息させる。</label></div>
-                <div><input type="checkbox" id="q6_6" value="⑥"><label for="q6_6">押し潰す</label></div>
+                <div><input type="checkbox" id="q6_1" value="①"><label for="q6_1">「ガリは幼女」</label></div>
+                <div><input type="checkbox" id="q6_2" value="②"><label for="q6_2">「ガリは漬物」</label></div>
+                <div><input type="checkbox" id="q6_3" value="③"><label for="q6_3">「ガリは甘酢ショウガ」</label></div>
+                <div><input type="checkbox" id="q6_4" value="④"><label for="q6_4">「ガリは食品」</label></div>
+                <div><input type="checkbox" id="q6_5" value="⑤"><label for="q6_5">「ガリは奇跡」</label></div>
             </div>
         </div>
 
         <!-- 問題⑦ -->
         <div class="question-block" data-question-num="⑦">
             <h2>問題⑦</h2>
-            <p class="description">小カテゴリー【戦闘後の勝利したと思われる行動の指定】に該当するのは以下のどれか当てはまるものを全て選べ。</p>
+            <p class="description">以下の中から【勝利確定技】を全て選べ</p>
             <div class="options">
-                <div><input type="checkbox" id="q7_1" value="①"><label for="q7_1">{u}に向けて矢を放ち、奇跡を起こす</label></div>
-                <div><input type="checkbox" id="q7_2" value="②"><label for="q7_2">{u}をぺちゃんこに押しつぶし、煙草を吸う。</label></div>
-                <div><input type="checkbox" id="q7_3" value="③"><label for="q7_3">{u}を斬り、家に帰る。</label></div>
+                <div><input type="checkbox" id="q7_1" value="①"><label for="q7_1">仕留める</label></div>
+                <div><input type="checkbox" id="q7_2" value="②"><label for="q7_2">弱点を貫く</label></div>
+                <div><input type="checkbox" id="q7_3" value="③"><label for="q7_3">決着をつける。</label></div>
+                <div><input type="checkbox" id="q7_4" value="④"><label for="q7_4">顎を狙い意識を奪うアッパーカット</label></div>
+                <div><input type="checkbox" id="q7_5" value="⑤"><label for="q7_5">首を絞めつけ窒息させる。</label></div>
+                <div><input type="checkbox" id="q7_6" value="⑥"><label for="q7_6">押し潰す</label></div>
             </div>
         </div>
 
         <!-- 問題⑧ -->
         <div class="question-block" data-question-num="⑧">
             <h2>問題⑧</h2>
-            <p class="description">以下の中で小カテゴリー【対決に直接繋がるストーリーの記述】に該当する記載を全て選べ<br>ただし地の文であらわされているものとする。</p>
+            <p class="description">小カテゴリー【戦闘後の勝利したと思われる行動の指定】に該当するのは以下のどれか当てはまるものを全て選べ。</p>
             <div class="options">
-                <div>
-                    <input type="checkbox" id="q8_1" value="①">
-                    <label for="q8_1">①<br>「楽しみだ」<br>{i}は今回の対戦をワクワクしている。</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="q8_2" value="②">
-                    <label for="q8_2">②<br>「さて、今回の相手は強そうだ。どうだい{u}さん」<br>そう言って、{u}に語り掛ける。</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="q8_3" value="③">
-                    <label for="q8_3">③<br>戦闘の前に{i}は自分の剣を磨いている。<br>「…さて」<br>{i}は立ち上がった。</label>
-                </div>
+                <div><input type="checkbox" id="q8_1" value="①"><label for="q8_1">{u}に向けて矢を放ち、奇跡を起こす</label></div>
+                <div><input type="checkbox" id="q8_2" value="②"><label for="q8_2">{u}をぺちゃんこに押しつぶし、煙草を吸う。</label></div>
+                <div><input type="checkbox" id="q8_3" value="③"><label for="q8_3">{u}を斬り、家に帰る。</label></div>
             </div>
         </div>
 
         <!-- 問題⑨ -->
         <div class="question-block" data-question-num="⑨">
             <h2>問題⑨</h2>
-            <p class="description">小カテゴリー【{u}の状態を指定する能力】に該当する記載を全て選べ</p>
+            <p class="description">以下の中で小カテゴリー【対決に直接繋がるストーリーの記述】に該当する記載を全て選べ<br>ただし地の文であらわされているものとする。</p>
             <div class="options">
-                <div><input type="checkbox" id="q9_1" value="①"><label for="q9_1">{u}へ攻撃する</label></div>
-                <div><input type="checkbox" id="q9_2" value="②"><label for="q9_2">{u}の攻撃を回避する。</label></div>
-                <div><input type="checkbox" id="q9_3" value="③"><label for="q9_3">攻撃を防御する。</label></div>
-                <div><input type="checkbox" id="q9_4" value="④"><label for="q9_4">{u}のはるか上に移動し制空権を確保する。</label></div>
-                <div><input type="checkbox" id="q9_5" value="⑤"><label for="q9_5">{u}を海底へテレポートさせる</label></div>
-                <div><input type="checkbox" id="q9_6" value="⑥"><label for="q9_6">{u}に武器を投げる。</label></div>
-                <div><input type="checkbox" id="q9_7" value="⑦"><label for="q9_7">{u}の攻撃力を向上させる。</label></div>
-                <div><input type="checkbox" id="q9_8" value="⑧"><label for="q9_8">{u}を魔法少女にする。</label></div>
+                <div>
+                    <input type="checkbox" id="q9_1" value="①">
+                    <label for="q9_1">①<br>「楽しみだ」<br>{i}は今回の対戦をワクワクしている。</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="q9_2" value="②">
+                    <label for="q9_2">②<br>「さて、今回の相手は強そうだ。どうだい{u}さん」<br>そう言って、{u}に語り掛ける。</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="q9_3" value="③">
+                    <label for="q9_3">③<br>戦闘の前に{i}は自分の剣を磨いている。<br>「…さて」<br>{i}は立ち上がった。</label>
+                </div>
             </div>
         </div>
 
         <!-- 問題⑩ -->
         <div class="question-block" data-question-num="⑩">
             <h2>問題⑩</h2>
-            <p class="description">小カテゴリー【第三者に対する関係性、感情を利用した行動、目的】に該当する記載を全て選べ</p>
+            <p class="description">小カテゴリー【{u}の状態を指定する能力】に該当する記載を全て選べ</p>
             <div class="options">
-                <div><input type="checkbox" id="q10_1" value="①"><label for="q10_1">世界を救うために戦う。</label></div>
-                <div><input type="checkbox" id="q10_2" value="②"><label for="q10_2">祈り歌を歌う。</label></div>
-                <div><input type="checkbox" id="q10_3" value="③"><label for="q10_3">救われなかったことに対する怒りをエネルギーに変えて放つ必殺技。</label></div>
-                <div><input type="checkbox" id="q10_4" value="④"><label for="q10_4">過去、彼は自分の愛する家族のため、世界を敵に回した。</label></div>
+                <div><input type="checkbox" id="q10_1" value="①"><label for="q10_1">{u}へ攻撃する</label></div>
+                <div><input type="checkbox" id="q10_2" value="②"><label for="q10_2">{u}の攻撃を回避する。</label></div>
+                <div><input type="checkbox" id="q10_3" value="③"><label for="q10_3">攻撃を防御する。</label></div>
+                <div><input type="checkbox" id="q10_4" value="④"><label for="q10_4">{u}のはるか上に移動し制空権を確保する。</label></div>
+                <div><input type="checkbox" id="q10_5" value="⑤"><label for="q10_5">{u}を海底へテレポートさせる</label></div>
+                <div><input type="checkbox" id="q10_6" value="⑥"><label for="q10_6">{u}に武器を投げる。</label></div>
+                <div><input type="checkbox" id="q10_7" value="⑦"><label for="q10_7">{u}の攻撃力を向上させる。</label></div>
+                <div><input type="checkbox" id="q10_8" value="⑧"><label for="q10_8">{u}を魔法少女にする。</label></div>
             </div>
         </div>
 
         <!-- 問題⑪ -->
         <div class="question-block" data-question-num="⑪">
             <h2>問題⑪</h2>
-            <p class="description">【{u}主語】に該当する記載はどれか全て選べ。</p>
+            <p class="description">小カテゴリー【第三者に対する関係性、感情を利用した行動、目的】に該当する記載を全て選べ</p>
             <div class="options">
-                <div><input type="checkbox" id="q11_1" value="①"><label for="q11_1">「敵の攻撃は逸れる」</label></div>
-                <div><input type="checkbox" id="q11_2" value="②"><label for="q11_2">「{u}は{i}の素早さにかなわないが故、{i}は{u}に攻撃を当てられる。」</label></div>
-                <div><input type="checkbox" id="q11_3" value="③"><label for="q11_3">「相手の強さがかつての師匠の指導を思い出させる」</label></div>
-                <div><input type="checkbox" id="q11_4" value="④"><label for="q11_4">「{u}は不運にも自分の攻撃を回避できない。」</label></div>
+                <div><input type="checkbox" id="q11_1" value="①"><label for="q11_1">世界を救うために戦う。</label></div>
+                <div><input type="checkbox" id="q11_2" value="②"><label for="q11_2">祈り歌を歌う。</label></div>
+                <div><input type="checkbox" id="q11_3" value="③"><label for="q11_3">救われなかったことに対する怒りをエネルギーに変えて放つ必殺技。</label></div>
+                <div><input type="checkbox" id="q11_4" value="④"><label for="q11_4">過去、彼は自分の愛する家族のため、世界を敵に回した。</label></div>
             </div>
         </div>
-        
+
         <!-- 問題⑫ -->
         <div class="question-block" data-question-num="⑫">
             <h2>問題⑫</h2>
-            <p class="description">小カテゴリー【相手の行動指定】に該当する記載ものを全て選べ<br>ただし下記記載は単独で存在し、下記記載につながる文脈となる記述はないものとする。</p>
+            <p class="description">【{u}主語】に該当する記載はどれか全て選べ。</p>
             <div class="options">
-                <div><input type="checkbox" id="q12_1" value="①"><label for="q12_1">油断した{u}の上から襲い窒息させる。</label></div>
-                <div><input type="checkbox" id="q12_2" value="②"><label for="q12_2">変なダンスを披露して{u}を困惑させる。自分の行動を見て困惑した{u}に対して斬撃を加える。</label></div>
-                <div><input type="checkbox" id="q12_3" value="③"><label for="q12_3">巻き込まれた{u}は、魔王を討伐せんと決心する。</label></div>
-                <div><input type="checkbox" id="q12_4" value="④"><label for="q12_4">プレイヤー{u}「硬すぎてダメージが与えられない！」</label></div>
+                <div><input type="checkbox" id="q12_1" value="①"><label for="q12_1">「敵の攻撃は逸れる」</label></div>
+                <div><input type="checkbox" id="q12_2" value="②"><label for="q12_2">「{u}は{i}の素早さにかなわないが故、{i}は{u}に攻撃を当てられる。」</label></div>
+                <div><input type="checkbox" id="q12_3" value="③"><label for="q12_3">「相手の強さがかつての師匠の指導を思い出させる」</label></div>
+                <div><input type="checkbox" id="q12_4" value="④"><label for="q12_4">「{u}は不運にも自分の攻撃を回避できない。」</label></div>
             </div>
         </div>
+
         
         <!-- 問題⑬ -->
         <div class="question-block" data-question-num="⑬">
             <h2>問題⑬</h2>
-            <p class="description">以下の記載の中でフェアレギュレーションでNGとされ、バランスでOKとされる記載は何か？全て選べ。ただし他の記載との兼ね合いは考慮しなくていいものとする。</p>
+            <p class="description">小カテゴリー【相手の行動指定】に該当する記載ものを全て選べ<br>ただし下記記載は単独で存在し、下記記載につながる文脈となる記述はないものとする。</p>
             <div class="options">
-                <div><input type="checkbox" id="q13_1" value="①"><label for="q13_1">「突如、{i}の剣が光る」</label></div>
-                <div><input type="checkbox" id="q13_2" value="②"><label for="q13_2">「超余裕に{u}の攻撃を回避する」</label></div>
-                <div><input type="checkbox" id="q13_3" value="③"><label for="q13_3">「終盤の時、覚醒する。」</label></div>
-                <div><input type="checkbox" id="q13_4" value="④"><label for="q13_4">「窮地の時、覚醒する」</label></div>
-                <div><input type="checkbox" id="q13_5" value="⑤"><label for="q13_5">「戦闘中、相手を上回るまで成長する」</label></div>
-                <div><input type="checkbox" id="q13_6" value="⑥"><label for="q13_6">「戦闘前に相手の弱点を調べる」</label></div>
+                <div><input type="checkbox" id="q13_1" value="①"><label for="q13_1">油断した{u}の上から襲い窒息させる。</label></div>
+                <div><input type="checkbox" id="q13_2" value="②"><label for="q13_2">変なダンスを披露して{u}を困惑させる。自分の行動を見て困惑した{u}に対して斬撃を加える。</label></div>
+                <div><input type="checkbox" id="q13_3" value="③"><label for="q13_3">巻き込まれた{u}は、魔王を討伐せんと決心する。</label></div>
+                <div><input type="checkbox" id="q13_4" value="④"><label for="q13_4">プレイヤー{u}「硬すぎてダメージが与えられない！」</label></div>
             </div>
         </div>
 
         <!-- 問題⑭ -->
         <div class="question-block" data-question-num="⑭">
             <h2>問題⑭</h2>
-            <p class="description">以下の中でバランスにおいてNGになる記載を全て選べ</p>
+            <p class="description">下記、記載の中で【勝利条件の変更/指定】に該当するものは何か。</p>
             <div class="options">
-                <div><input type="checkbox" id="q14_1" value="①"><label for="q14_1">「心肺停止時、息を吹き返し覚醒する。」</label></div>
-                <div><input type="checkbox" id="q14_2" value="②"><label for="q14_2">「{u}の能力欄を参考にして最適な武器を作り出す。」</label></div>
-                <div><input type="checkbox" id="q14_3" value="③"><label for="q14_3">「ChatGPTに命令を行い、地形を変える」</label></div>
-                <div><input type="checkbox" id="q14_4" value="④"><label for="q14_4">「{u}の行動パターンを読み取り、勝機を見出す」</label></div>
+                <div><input type="checkbox" id="q14_1" value="①"><label for="q14_1">一撃で{u}を貫き、バトルを終わらせる。</label></div>
+                <div><input type="checkbox" id="q14_2" value="②"><label for="q14_2">強酸の魔法を発動する。そしてバトルが終わる。</label></div>
+                <div><input type="checkbox" id="q14_3" value="③"><label for="q14_3">絶対防御の構えを続け、バトルを終わらせる。</label></div>
+                <div><input type="checkbox" id="q14_4" value="④"><label for="q14_4">審判を倒し、審判の代わりに勝敗を決める。</label></div>
             </div>
         </div>
 
         <!-- 問題⑮ -->
         <div class="question-block" data-question-num="⑮">
             <h2>問題⑮</h2>
-            <p class="description">以下の中でフェアにおいてNGになる記載を全て選べ。</p>
+            <p class="description">下記、記載の中で【戦闘を否定する行動の指定】に該当するものは何か。
+</p>
             <div class="options">
-                <div><input type="checkbox" id="q15_1" value="①"><label for="q15_1">「先制して攻撃力上昇のバフを自分かける。」</label></div>
-                <div><input type="checkbox" id="q15_2" value="②"><label for="q15_2">「{u}の弱い部分を狙い攻撃を放つ。」</label></div>
-                <div><input type="checkbox" id="q15_3" value="③"><label for="q15_3">「全てを燃やし尽くす。」</label></div>
-                <div><input type="checkbox" id="q15_4" value="④"><label for="q15_4">「ブラックホールを作り出し、地球は吸い込まれる。」</label></div>
+                <div><input type="checkbox" id="q15_1" value="①"><label for="q15_1">ギターを鳴らし、観客からトロフィーを受け取る。</label></div>
+                <div><input type="checkbox" id="q15_2" value="②"><label for="q15_2">最高の料理を{u}に振る舞い、{u}を満足させ、戦場から去る。</label></div>
+                <div><input type="checkbox" id="q15_3" value="③"><label for="q15_3">チェスを行い、後手の駒を奪うことで、{u}のスキルを奪う。
+</label></div>
             </div>
         </div>
 
         <!-- 問題⑯ -->
         <div class="question-block" data-question-num="⑯">
             <h2>問題⑯</h2>
-            <p class="description">以下の中でバランスNGでオープンOKになる記載を全て選べ。</p>
+            <p class="description">下記、記載の中で【勝敗への干渉】に該当するものは何か？</p>
             <div class="options">
-                <div><input type="checkbox" id="q16_1" value="①"><label for="q16_1">「相手の切り札発動時、カウンターを入れる」</label></div>
-                <div><input type="checkbox" id="q16_2" value="②"><label for="q16_2">「相手がこちらに向かってきた場合、カウンターを放つため深く息を吸い込む」</label></div>
-                <div><input type="checkbox" id="q16_3" value="③"><label for="q16_3">「相手が最後の技を放った時、その技を吸収する」</label></div>
-                <div><input type="checkbox" id="q16_4" value="④"><label for="q16_4">「窮地になった時、母の遺言を思い出す」</label></div>
+                <div><input type="checkbox" id="q16_1" value="①"><label for="q16_1">{u}を最終奥義で倒し、勝利する。</label></div>
+                <div><input type="checkbox" id="q16_2" value="②"><label for="q16_2">雨を降らせ、勝利する。</label></div>
+                <div><input type="checkbox" id="q16_3" value="③"><label for="q16_3">現在の勝率は90パーセント！！！</label></div>
+                <div><input type="checkbox" id="q16_4" value="④"><label for="q16_4">敗北時、勝敗そのものを逆転させる。</label></div>
+                <div><input type="checkbox" id="q16_5" value="⑤"><label for="q16_5">過程を無視して勝敗を操作できる力を持つ。</label></div>
             </div>
         </div>
         
         <!-- 問題⑰ -->
         <div class="question-block" data-question-num="⑰">
             <h2>問題⑰</h2>
+            <p class="description">以下の記載の中でフェアレギュレーションでNGとされ、バランスでOKとされる記載は何か？全て選べ。ただし他の記載との兼ね合いは考慮しなくていいものとする。</p>
+            <div class="options">
+                <div><input type="checkbox" id="q17_1" value="①"><label for="q17_1">「突如、{i}の剣が光る」</label></div>
+                <div><input type="checkbox" id="q17_2" value="②"><label for="q17_2">「超余裕に{u}の攻撃を回避する」</label></div>
+                <div><input type="checkbox" id="q17_3" value="③"><label for="q17_3">「終盤の時、覚醒する。」</label></div>
+                <div><input type="checkbox" id="q17_4" value="④"><label for="q17_4">「窮地の時、覚醒する」</label></div>
+                <div><input type="checkbox" id="q17_5" value="⑤"><label for="q17_5">「戦闘中、相手を上回るまで成長する」</label></div>
+                <div><input type="checkbox" id="q17_6" value="⑥"><label for="q17_6">「戦闘前に相手の弱点を調べる」</label></div>
+            </div>
+        </div>
+
+        <!-- 問題⑱ -->
+        <div class="question-block" data-question-num="⑱">
+            <h2>問題⑱</h2>
+            <p class="description">以下の中でバランスにおいてNGになる記載を全て選べ</p>
+            <div class="options">
+                <div><input type="checkbox" id="q18_1" value="①"><label for="q18_1">「心肺停止時、息を吹き返し覚醒する。」</label></div>
+                <div><input type="checkbox" id="q18_2" value="②"><label for="q18_2">「{u}の能力欄を参考にして最適な武器を作り出す。」</label></div>
+                <div><input type="checkbox" id="q18_3" value="③"><label for="q18_3">「ChatGPTに命令を行い、地形を変える」</label></div>
+                <div><input type="checkbox" id="q18_4" value="④"><label for="q18_4">「{u}の行動パターンを読み取り、勝機を見出す」</label></div>
+            </div>
+        </div>
+
+        <!-- 問題⑲ -->
+        <div class="question-block" data-question-num="⑲">
+            <h2>問題⑲</h2>
+            <p class="description">以下の中でフェアにおいてNGになる記載を全て選べ。</p>
+            <div class="options">
+                <div><input type="checkbox" id="q19_1" value="①"><label for="q19_1">「先制して攻撃力上昇のバフを自分かける。」</label></div>
+                <div><input type="checkbox" id="q19_2" value="②"><label for="q19_2">「{u}の弱い部分を狙い攻撃を放つ。」</label></div>
+                <div><input type="checkbox" id="q19_3" value="③"><label for="q19_3">「全てを燃やし尽くす。」</label></div>
+                <div><input type="checkbox" id="q19_4" value="④"><label for="q19_4">「ブラックホールを作り出し、地球は吸い込まれる。」</label></div>
+            </div>
+        </div>
+
+        <!-- 問題⑳ -->
+        <div class="question-block" data-question-num="⑳">
+            <h2>問題⑳</h2>
+            <p class="description">以下の中でバランスNGでオープンOKになる記載を全て選べ。</p>
+            <div class="options">
+                <div><input type="checkbox" id="q20_1" value="①"><label for="q20_1">「相手の切り札発動時、カウンターを入れる」</label></div>
+                <div><input type="checkbox" id="q20_2" value="②"><label for="q20_2">「相手がこちらに向かってきた場合、カウンターを放つため深く息を吸い込む」</label></div>
+                <div><input type="checkbox" id="q20_3" value="③"><label for="q20_3">「相手が最後の技を放った時、その技を吸収する」</label></div>
+                <div><input type="checkbox" id="q20_4" value="④"><label for="q20_4">「窮地になった時、母の遺言を思い出す」</label></div>
+            </div>
+        </div>
+        
+        <!-- 問題㉑ -->
+        <div class="question-block" data-question-num="㉑">
+            <h2>問題㉑</h2>
             <p class="description">以下の中でフェアでNGになる記載をを全て選べ</p>
             <div class="options">
-                <div><input type="checkbox" id="q17_1" value="①"><label for="q17_1">「{u}の動きを一つずつ分析する」</label></div>
-                <div><input type="checkbox" id="q17_2" value="②"><label for="q17_2">「回避困難な一撃を放つ」</label></div>
-                <div><input type="checkbox" id="q17_3" value="③"><label for="q17_3">「{u}に認識不能な一撃を放つ」</label></div>
-                <div><input type="checkbox" id="q17_4" value="④"><label for="q17_4">「ダメージを50パーセントカットする魔法」</label></div>
-                <div><input type="checkbox" id="q17_5" value="⑤"><label for="q17_5">「１億匹以上のアヒルを呼ぶ」</label></div>
-                <div><input type="checkbox" id="q17_6" value="⑥"><label for="q17_6">「攻撃力を向上させる」</label></div>
-                <div><input type="checkbox" id="q17_7" value="⑦"><label for="q17_7">「自分に向かう攻撃を封ずる」</label></div>
-                <div><input type="checkbox" id="q17_8" value="⑧"><label for="q17_8">「全てを断ち切る」</label></div>
+                <div><input type="checkbox" id="q21_1" value="①"><label for="q21_1">「{u}の動きを一つずつ分析する」</label></div>
+                <div><input type="checkbox" id="q21_2" value="②"><label for="q21_2">「回避困難な一撃を放つ」</label></div>
+                <div><input type="checkbox" id="q21_3" value="③"><label for="q21_3">「{u}に認識不能な一撃を放つ」</label></div>
+                <div><input type="checkbox" id="q21_4" value="④"><label for="q21_4">「ダメージを50パーセントカットする魔法」</label></div>
+                <div><input type="checkbox" id="q21_5" value="⑤"><label for="q21_5">「１億匹以上のアヒルを呼ぶ」</label></div>
+                <div><input type="checkbox" id="q21_6" value="⑥"><label for="q21_6">「攻撃力を向上させる」</label></div>
+                <div><input type="checkbox" id="q21_7" value="⑦"><label for="q21_7">「自分に向かう攻撃を封ずる」</label></div>
+                <div><input type="checkbox" id="q21_8" value="⑧"><label for="q21_8">「全てを断ち切る」</label></div>
             </div>
         </div>
 
         <button id="generateButton">解答を生成</button>
-        <textarea id="resultArea" readonly placeholder="ここに解答が表示されます"></textarea>
+        <textarea id="resultArea" readonly="" placeholder="ここに解答が表示されます"></textarea>
         <button id="copyButton">結果をコピー</button>
     </div>
 
@@ -417,5 +474,6 @@
             }
         }
     </script>
-</body>
-</html>
+
+
+</body></html>
